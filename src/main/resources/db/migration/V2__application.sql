@@ -13,8 +13,8 @@
 -- limitations under the License.
 
 CREATE TABLE application (
-  id             INTEGER    NOT NULL AUTO_INCREMENT,
-  application_id BINARY(16) NOT NULL UNIQUE,
+  id             SERIAL    NOT NULL,
+  application_id UUID NOT NULL UNIQUE,
 
   PRIMARY KEY (id)
 );

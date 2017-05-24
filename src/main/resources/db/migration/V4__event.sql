@@ -13,9 +13,9 @@
 -- limitations under the License.
 
 CREATE TABLE event (
-  id                   INTEGER  NOT NULL AUTO_INCREMENT,
+  id                   SERIAL  NOT NULL,
   chaos_id             INTEGER  NOT NULL,
-  executed_at          DATETIME NOT NULL,
+  executed_at          TIMESTAMP NOT NULL,
   total_instance_count INTEGER  NOT NULL,
 
   PRIMARY KEY (id),

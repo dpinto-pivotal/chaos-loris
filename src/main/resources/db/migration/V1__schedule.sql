@@ -13,7 +13,7 @@
 -- limitations under the License.
 
 CREATE TABLE schedule (
-  id         INTEGER      NOT NULL AUTO_INCREMENT,
+  id         SERIAL      NOT NULL,
   name       VARCHAR(255) NOT NULL UNIQUE,
   expression VARCHAR(255) NOT NULL,
 

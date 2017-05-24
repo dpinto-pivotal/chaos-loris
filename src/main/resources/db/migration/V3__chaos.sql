@@ -13,7 +13,7 @@
 -- limitations under the License.
 
 CREATE TABLE chaos (
-  id             INTEGER NOT NULL AUTO_INCREMENT,
+  id             SERIAL NOT NULL,
   application_id INTEGER NOT NULL,
   probability    FLOAT   NOT NULL,
   schedule_id    INTEGER NOT NULL,
